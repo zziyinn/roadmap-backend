@@ -14,35 +14,22 @@ A simple Flask-based backend for managing AI learning resources, user learning p
 
 ## 📁 Project Structure
 
-your_project/
-│
-├── app/                        
-│   ├── __init__.py             
-│   ├── models/                 
-│   │   ├── __init__.py
-│   │   ├── user.py            
-│   │   ├── track.py            
-│   │   ├── resource.py         
-│   │   └── progress.py         
-│   │
-│   ├── routes/                 
-│   │   ├── __init__.py
-│   │   ├── track_routes.py     
-│   │   ├── user_routes.py      
-│   │   ├── resource_routes.py  
-│   │   └── feedback_routes.py  
-│   │
-│   ├── services/              
-│   │   └── recommendation.py   
-│   │
-│   ├── utils/                  
-│   │   └── helpers.py
-│   │
-│   └── config.py               
-│
-├── run.py                     
-├── requirements.txt            
-└── README.md
+ai_learning_platform/
+├── app/
+│   ├── __init__.py            # App factory
+│   ├── routes/
+│   │   └── api.py             # All API endpoints
+│   ├── models/
+│   │   └── models.py          # SQLAlchemy DB models
+│   ├── services/
+│   │   └── recommend.py       # Custom logic (e.g., recommendations)
+│   └── utils/
+│       └── helpers.py         # Utility functions
+├── config.py                  # Config (DB, secret key, etc.)
+├── requirements.txt           # Required Python packages
+├── run.py                     # Entry point
+└── README.md                  # This file
+
 
 # 📦 API Endpoints
 
