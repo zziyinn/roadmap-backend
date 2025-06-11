@@ -6,5 +6,9 @@ app = Flask(__name__)
 def hello():
     return jsonify(message="Hello, World!")
 
+@app.route("/")
+def index():
+    return "Hello, this is the backend API server!"
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000)
