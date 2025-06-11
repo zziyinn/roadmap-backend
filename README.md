@@ -44,3 +44,26 @@ ai_learning_platform/
 | `/feedback`                  | POST   | Submit feedback             |
 | `/resources/all`             | GET    | Get all resources (admin)   |
 | `/login`                    | POST   | Basic user login             |
+
+##  Roadmap Backend API
+
+This is a simple backend API service built with Flask, providing a basic example endpoint.
+
+### Live URL
+
+The API is deployed on Railway at:  
+[https://roadmap-backend-production.up.railway.app](https://roadmap-backend-production.up.railway.app)
+
+- Root path (homepage): [https://roadmap-backend-production.up.railway.app/](https://roadmap-backend-production.up.railway.app/)
+- Hello endpoint: [https://roadmap-backend-production.up.railway.app/api/hello](https://roadmap-backend-production.up.railway.app/api/hello)
+
+### API Endpoints
+
+#### GET `/api/hello`
+
+Returns a simple JSON response:
+
+```json
+{
+  "message": "Hello, World!"
+}
