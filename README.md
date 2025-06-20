@@ -67,3 +67,15 @@ Returns a simple JSON response:
 {
   "message": "Hello, World!"
 }
+
+
+### 1. Start the Flask Backend
+
+In your terminal, run:
+
+```bash
+python gemini.py
+
+* Running on http://127.0.0.1:5002
+
+* Running on http://127.0.0.1:5002/static/index.html

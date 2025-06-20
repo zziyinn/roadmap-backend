@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Learning Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CS Self-Study Guide Assistant</h1>
+        <div class="chat-container" id="chatContainer">
+            <div class="welcome-message">
+                <h3>Welcome to Your CS Learning Journey! 🚀</h3>
+                <p>Ask me anything about computer science, programming languages, learning paths, or career advice. I'm here to help you navigate your self-study journey based on the comprehensive CS Self-Study Guide.</p>
+                <div class="suggestions">
+                    <div class="suggestion-card" onclick="askSuggestion('I\'m a complete beginner to programming. Which language should I start with?')">
+                        <h4>🌟 Getting Started</h4>
+                        <p>Perfect for absolute beginners</p>
+                    </div>
+                    <div class="suggestion-card" onclick="askSuggestion('What\'s the best learning path to become a full-stack web developer?')">
+                        <h4>🌐 Web Development</h4>
+                        <p>Frontend and backend roadmap</p>
+                    </div>
+                    <div class="suggestion-card" onclick="askSuggestion('How do I prepare for software engineering interviews?')">
+                        <h4>💼 Interview Prep</h4>
+                        <p>Algorithms, system design, and more</p>
+                    </div>
+                    <div class="suggestion-card" onclick="askSuggestion('What math background do I need for machine learning?')">
+                        <h4>🤖 Machine Learning</h4>
+                        <p>Prerequisites and learning path</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="text" id="questionInput" placeholder="Ask me about CS topics, programming languages, career paths..." onkeypress="handleKeyPress(event)">
+            <button onclick="askQuestion()">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
